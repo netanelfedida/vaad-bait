@@ -1,0 +1,70 @@
+/* Container for the payment methods */
+.payment-methods-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Styling for each payment option */
+.payment-option {
+    position: relative;
+    cursor: pointer;
+    margin: 10px;
+}
+
+/* Image styling for payment methods */
+.payment-image {
+    width: 100px; /* Adjust the size as needed */
+    height: auto;
+    display: block;
+}
+
+/* Enabled image for clickable payment option */
+.payment-option:not(.disabled) .enabled-image {
+    transition: transform 0.3s ease;
+}
+
+.payment-option:not(.disabled) .enabled-image:hover {
+    transform: scale(1.05); /* Adds a slight zoom on hover */
+}
+
+/* Overlay for disabled payment options (BIT and PayPal) */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+/* Coming soon text displayed on the overlay */
+.coming-soon-text {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Disabled payment option styling */
+.payment-option.disabled .payment-image {
+    opacity: 0.5; /* Make the image appear faded */
+}
+
+/* Responsive behavior */
+@media (max-width: 600px) {
+    .payment-option {
+        width: 100%; /* Full width on smaller screens */
+        margin: 5px 0;
+    }
+}
+
+.payment-label {
+    text-align: center; /* Center text under the image */
+    margin-top: 5px;    /* Add some spacing between the image and text */
+    font-size: 16px;    /* Adjust the text size as needed */
+}
+

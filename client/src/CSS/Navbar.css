@@ -1,0 +1,16 @@
+.profile-small {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .logo {
+    margin-right: 40% !important;
+  }
+  .profile-small {
+    display: block;
+    height: 40px;
+  }
+  .profile-big {
+    display: none;
+  }
+}

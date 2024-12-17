@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.9.16",
+    "puppeteer": "^23.10.1",
+    "react-bootstrap": "^2.10.5",
+    "react-intersection-observer": "^9.13.1"
+  }
+}

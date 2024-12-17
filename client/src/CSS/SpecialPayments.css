@@ -1,0 +1,20 @@
+.sum {
+    font-size: 30px;
+    margin-bottom: 2%;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.custom-table {
+    background-color: blue;
+}
+
+.flex-container {
+    width: 50%;
+    margin: 0 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -1,0 +1,35 @@
+#contactUs {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 20px;
+    margin-right: 30%;
+    background-color: rgba(248, 249, 249, 0.7);
+  }
+  
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+  }
+  
+  .contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  @media (max-width: 900px){
+    #contactUs{
+        width: 90%;
+        margin: 10px 5%;  
+    }
+    .contact-details{
+        align-items: center;
+    }
+    
+  }
+  

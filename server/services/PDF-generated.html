@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>דוח הכנסות והוצאות</title>
+    <style>
+    </style>
+</head>
+<body style="margin: 0; text-align: center;">
+    <div style="margin-top: 100px ; min-height: 900px;">
+        <h1>דוח הכנסות והוצאות לחודש: {{date}}</h1>
+        <div style="background-color: white; width:450px; margin: auto; text-align: center;">
+            <div>
+                <h2><u>הכנסות</u></h2>
+                {{income data}}
+            </div>
+            <div>
+                <h2><u>הוצאות</u></h2>
+                {{expense data}}
+            </div>
+            <div>
+                <h2 class="inline-header">סה"כ: {{Sum data}}</h2>
+            </div>
+            <div>
+                <h2 class="inline-header">סך הכל בקופה: {{Total in the box}}</h2>
+            </div>
+        </div>
+        
+    </div>
+</body>
+<hr>
+<footer style="padding-top: 5px;">
+    <h4 style="text-align: center;"> vaadbaitcompany@gmail.com ©<br/> 0533445034 </h4>
+</footer>
+</html>

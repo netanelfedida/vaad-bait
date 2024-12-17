@@ -1,0 +1,58 @@
+/* For sliding in from the left */
+.slide-left-enter {
+  transform: translateX(-100%);
+}
+.slide-left-enter-active {
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+
+/* For sliding in from the right */
+.slide-right-enter {
+  transform: translateX(100%);
+}
+.slide-right-enter-active {
+  transform: translateX(0);
+  transition: transform 1000ms ease-in-out;
+}
+
+
+.slide-box {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: right;
+  border-radius: 5px;
+  width: 400px;
+  height:150px;
+  margin: 20px;
+  margin-left: 0;
+
+}
+
+.aboutUsTitle{
+  color:beige;
+  
+}
+
+img{
+  float:left;
+}
+table {
+  margin: 0 20%;
+}
+
+/* For small screens, change the layout */
+@media (max-width: 768px) {
+  table {
+    margin: 0; /* Remove margin for small screens */
+  }
+
+  td {
+    display: block; /* Make each td take up a full row */
+  }
+  .slide-box{
+    margin: 10% 5%;
+    width:90%;
+  }
+}
+
