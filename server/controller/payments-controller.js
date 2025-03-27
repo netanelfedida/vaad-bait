@@ -198,7 +198,6 @@ router.post('/fixed-payments-process', async(req, res) => {
 //Process of specials payments
 router.post('/special-payments-process', async(req, res) => {
         const transactionDetails = req.body;
-        console.log("transactionDetails ----------> ", transactionDetails);
         
         try{
             const transactionID = await createTransictions(connection, transactionDetails);

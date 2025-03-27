@@ -7,7 +7,7 @@ const { getAllBuildingsID, getAllEmailAdressByBuildingid } = require('./building
 
 async function sendReportMonthly() {
     //Format (minuts, hours, day(1-31), month, day(0-7))
-    cron.schedule('30 13 2 * *', async () => {
+    cron.schedule('03 01 5 * *', async () => {
         const month = new Date().getMonth()+1;
         const year = new Date().getFullYear();
         try {
